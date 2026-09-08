@@ -15,8 +15,14 @@ function App() {
     }
 
   const removeValue = () => {
+
+    if (counter == 0) {
+      console.log("Limit reached")
+      return;
+    } 
       setCounter(counter - 1)
     }
+  
 
   return (
     <>
