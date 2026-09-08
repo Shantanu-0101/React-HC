@@ -11,6 +11,12 @@ function App() {
   // let counter = 15
 
   const addValue = () => {
+
+    if (counter > 19){
+      console.log('Limit Reached')
+      return;
+    }
+
     setCounter(counter + 1)
     }
 
